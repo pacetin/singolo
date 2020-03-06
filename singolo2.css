@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family:"Lato", "Verdana", sans-serif;
 }
 .wrapper {
   width: 1020px;
@@ -17,53 +18,58 @@
   margin: 0px auto;
   background-color: #323746;
 }
-.portfolio h2 {font-family:'Lato', 'Verdana', sans-serif;
+.portfolio__title-item {
   font-size: 30px;
   font-weight: 900;
   color: #666d89;
-  padding-left: 40.5px;
+  padding-left: 40px;
   padding-top: 61px; 
 }
-.portfolio p {font-family:'Lato', 'Verdana', sans-serif;
+.portfolio__text-item {
   font-size: 18px;
   font-weight: 300;
   color: #767e9e;
   line-height: 30px;
-  padding-left: 40.5px;
-  padding-right: 40.5px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 19px;
-  letter-spacing: 0.005rem;
- }
- .portfolio__tag {font-family:'Lato', 'Verdana', sans-serif;
+  text-align: justify;
+}
+.portfolio-tag {
   font-size: 12px;
   font-weight: 400;
   line-height: 22px;
   padding-left: 41px;
   padding-top: 11px;
   text-transform: capitalize;
- }
- .portfolio .tag {
-   color: #767e9e;
-   border: solid #767e9e 1px;
-   border-radius: 5px;
-   padding: 2.5px 6px;
-   margin-left: 7.5px;
- }
- .portfolio .tag.tag__colored {
+}
+.portfolio .tag {
+  color: #767e9e;
+  border: solid #767e9e 1px;
+  border-radius: 5px;
+  padding: 2.5px 6px;
+  margin-left: 7.5px;
+}
+.tag:last-child {
+  padding-right: 5px;
+}
+.portfolio .tag--colored {
   color: #dedede;
   border-color: #dedede;
   margin-left: 0px;
+  padding-right: 7px;
 }
-.layout__4__columns {
-  width: 939px;
-  height: 621px;
-  margin: 0 auto;
-  padding-top: 19px;
+.layout-4-columns {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  margin: 0 auto;
+}
+.layout-4-columns--portfolio {
+  padding-top: 19px;
+  width: 939px;
+  height: 621px;
   overflow: hidden;
 }
 .Portfolio {
@@ -71,45 +77,47 @@
   flex: 0 0 220px;
   margin-bottom: 20px;
 }
-.aboutus .wrapper {
+.about-us .wrapper {
   background-color: #f2f2f2;
   height: 730px;
 }
-.aboutus__bottom {
+.about-us__bottom {
   height: 5px;
   width: 1020px;
   margin: 0px auto;
   background-color: #ffffff;
 }
-.aboutus h2 {font-family:'Lato', 'Verdana', sans-serif;
+.about-us__title-item  {
   font-size: 30px;
   font-weight: 900;
   color: #666d89;
   line-height: 18px;
   padding-top: 68px;
   text-transform: capitalize;
-  padding-left: 40.5px;
+  padding-left: 40px;
 }
-.aboutus__text {font-family:'Lato', 'Verdana', sans-serif;
+.about-us__text-item {
   font-size: 18px;
   font-weight: 300;
   color: #767e9e;
   line-height: 30px;
   padding-top: 27px;
-  letter-spacing: 0.005rem;
-  padding-left: 40.5px;
-  padding-right: 40.5px;
- }
- .layout__3__columns {
-  width: 940px;
-  height: 229px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+.layout-3-columns {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding-left: 40px;
-  padding-right: 40px;
+}
+.layout-3-columns--about-us {
+  width: 940px;
+  height: 229px;
+  padding-left: 39.5px;
+  padding-right: 39.5px;
 }
 .person {
   flex: 0 0 300px;
@@ -118,57 +126,58 @@
   display: block;
   padding-top: 45px;
 }
-.person h3 {
+.person__title-item {
   display: block;
   overflow:hidden;
   width: 300px;
   height: 18px;
-  font-family:'Lato', 'Verdana', sans-serif;
   font-size: 18px;
   font-weight: 900;
   color: #666d89;
   line-height: 18px;
   padding-top: 16px;
- }
- .aboutus .person p {
-  font-family:'Lato', 'Verdana', sans-serif;
+}
+.person__text-item {
   font-size: 12px;
   font-weight: 400;
   color: #767e9e;
-  line-height: 22px;
+  line-height: 21.5px;
   padding-top: 10px;
- }
-.icons__media {
-  padding-top: 22px;
+  text-align: justify;
+}
+.icons-media--person {
+  padding-top: 24px;
   padding-left: 1px;
 }
-.icons__media div {
+.icons-media--person a {
   display: inline-block;
   width: 32px;
   height: 32px;
-  margin-right: 4px;
+  margin-right: 5px;
 }
-.facebook {
+.icons-media__facebook {
   background-image: url("assets/socialmedia.png");
   background-position: 0px 0px;
 }
-.mail {
+.icons-media__mail {
   background-image: url("assets/socialmedia.png");
   background-position: -40px 0px;
 }
-.twitter {
+.icons-media__twitter {
   background-image: url("assets/socialmedia.png");
   background-position: -80px 0px;
 }
-.linkedin {
+.icons-media__linkedin {
   background-image: url("assets/socialmedia.png");
   background-position: -120px 0px;
 }
-.icons__media div:hover {
+.icons-media--person a:hover {
   transform: scale(1.2);
-}
-.portfolio__tag .tag:hover {
-  color: #4ab48f;
-  border: solid #4ab48f 2px;
   cursor: pointer;
+}
+.portfolio-tag .tag:hover {
+  color: #4ab48f;
+  border: solid #4ab48f 1px;
+  cursor: pointer;
+  transition: all .3s ease-out;
 }
