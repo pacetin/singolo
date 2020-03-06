@@ -10,10 +10,10 @@
 }
 .portfolio .wrapper {
   background-color: #2d303a;
-  height: 865px;
+  height: 864px;
 }
 .portfolio__bottom {
-  height: 5px;
+  height: 6px;
   width: 1020px;
   margin: 0px auto;
   background-color: #323746;
@@ -23,7 +23,7 @@
   font-weight: 900;
   color: #666d89;
   padding-left: 40px;
-  padding-top: 61px; 
+  padding-top: 62px; 
 }
 .portfolio__text-item {
   font-size: 18px;
@@ -32,7 +32,7 @@
   line-height: 30px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 19px;
+  padding-top: 18px;
   text-align: justify;
 }
 .portfolio-tag {
@@ -79,10 +79,10 @@
 }
 .about-us .wrapper {
   background-color: #f2f2f2;
-  height: 730px;
+  height: 728px;
 }
 .about-us__bottom {
-  height: 5px;
+  height: 6px;
   width: 1020px;
   margin: 0px auto;
   background-color: #ffffff;
